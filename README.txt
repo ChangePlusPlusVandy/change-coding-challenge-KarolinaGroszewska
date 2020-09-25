@@ -1,3 +1,9 @@
+Twitter Tinker
+Allows user to enter two twitter usernames, randomly generates a tweet, and has user guess which twitter profile it belongs to. At the end, tallies correct responses.
+All required dependencies are added. Only thing required is an IDE that runs Python.
+Karolina Groszewska, karolina.groszewska@vanderbilt.edu
+
+Fun part of readme unique to project:
 Hi! I deciced to include this file to talk a little about my project and why I decided to go about it the way that I did.
 While I certainly have the most experience with Swift and some experience with dealing with JSON data, I wanted to do something that I could get done
 despite some technical difficulties I ran into that would still push me out of the comfort zone.

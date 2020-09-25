@@ -3,10 +3,11 @@ import random
 
 # Variables that contains the credentials to access Twitter API. Unique to Karolina Groszewska, and the
 # TwitterTinkerChange++ app
-ACCESS_TOKEN = '985311896852094976-4O3PBwUp0rWKs63ooksO4xDgmBFR67F'
-ACCESS_SECRET = 'bIexqmj0JaGKLuLyR2gVBFUuIYZEhEF1XP50zgmyQPnYO'
-CONSUMER_KEY = 'aIkFnPc1274hkU6S0SPwfqWC5'
-CONSUMER_SECRET = '3Ok37BSwVomAIYhsxffn1FkyskPFAYiboZYawV4cFhevCTFB2e'
+# Populate with own data
+ACCESS_TOKEN = 'INSERT HERE'
+ACCESS_SECRET = 'INSERT HERE'
+CONSUMER_KEY = 'INSERT HERE'
+CONSUMER_SECRET = 'INSERT HERE'
 # Access to user's consumer key and consumer secret
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 # Access to user's access key and access secret
@@ -41,7 +42,7 @@ def get_tweets(username):
         #final check for any @s
         if "@" in t:
             # tweet excluded for featuring an @"
-            print("")
+            print("tweet excluded for featuring an @")
         else:
             # appending tweets to the empty array tmp
             tmp.append(t)
@@ -56,10 +57,12 @@ if __name__ == '__main__':
     print("*********************************************************************************")
     # person one
     val1 = input("Enter your value for user number one following this format – 'kanyewest' (no quotes) : ")
+    # if left blank assume kanye
     if val1 == "":
         val1 = "kanyewest"
     # person two
     val2 = input("Enter your value for user number one following this format – 'elonmusk' (no quotes) : ")
+    # if left blank assume elon
     if val2 == "":
         val2 = "elonmusk"
     # tweet arrays are initialized
@@ -104,8 +107,10 @@ if __name__ == '__main__':
         # easter egg
         if userValue == "Karolina":
             print("Caffeine brain go brrrrrr")
+    #ending comments
     print("Thanks for playing TwitterTinker!")
     print("*********************************")
+    #point prints because grammar is important
     if points == 1:
         print("Your score was " + str(points) + " point. You played " + str(numberOfTweets) + " rounds.")
     elif numberOfTweets == 1:
